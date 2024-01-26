@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sonster</h1>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonster</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white; /* Set default text color to white */
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 50px; /* Adjust as needed */
+            font-size: 2rem; /* Adjust font size as needed */
+            color: black; /* Override text color to black */
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #uploadForm {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div id="uploadForm">
+        <h2>Upload a Video</h2>
+        <input type="file" id="videoFile" accept="video/*"><br><br>
+        <button onclick="uploadVideo()">Upload Video</button>
+    </div>
+
+    <script>
+        function uploadVideo() {
+            var fileInput = document.getElementById('videoFile');
+            var file = fileInput.files[0];
+            if (file) {
+                // Displaying file information
+                console.log('File name: ' + file.name);
+                console.log('File type: ' + file.type);
+                console.log('File size: ' + file.size + ' bytes');
+
+                // You can perform further actions with the file here, such as displaying it or processing it
+            } else {
+                console.log('No file selected');
+            }
+        }
+    </script>
+</body>
+</html>
